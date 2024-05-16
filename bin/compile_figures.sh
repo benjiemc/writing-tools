@@ -2,5 +2,5 @@
 
 for figure in $1/*.svg; do
     filename=${figure%%.svg}
-    inkscape --export-latex --export-filename="${filename}.pdf" "$figure"
+    inkscape $2 --export-filename="${filename}.pdf" "$figure"
 done
